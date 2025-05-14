@@ -1,0 +1,97 @@
+<!--
+Create a planner for activities to do in Vienna over the weekend.
+You will need 3 rows and 3 columns. The first row will contain the headings
+Day, Morning and Afternoon.
+The second row contains all the information for Saturday. Place descriptive
+lists within each of the two empty table cells(the cells for the morning and
+afternoon).
+For Sunday, use ordered lists to rank your activities. Within the ordered lists
+you should nest unordered lists with more information on each activity you
+plan
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vienna Weekend Planner</title>
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 50px auto;
+    }
+    th, td {
+      border: 1px solid lightgray;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+ 
+</head>
+<body>
+  <table class="">
+    
+    <tr>
+      <th>Day</th>
+      <th>Morning</th>
+      <th>Afternoon</th>
+    </tr>
+    
+    <tr>
+      <td>Saturday</td>
+      <td>
+        <ul>
+          <li>Visit Schönbrunn Palace</li>
+          <li>Walk in Belvedere</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Coffee at Café Central</li>
+          <li>Museum tour</li>
+        </ul>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>Sunday</td>
+      <td>
+        <ol>
+          <li>
+            Breakfast at Naschmarkt
+            <ul>
+              <li>Try local Bars</li>
+              <li>Explore good food</li>
+            </ul>
+          </li>
+          <li>
+            Visit Belvedere Museum
+            <ul>
+              <li>See Klimt's "The Kiss"</li>
+              <li>Walk around Belvedere</li>
+            </ul>
+          </li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>
+            Boat ride on the Danube
+            <ul>
+              <li>3-hourstour</li>
+              <li>Photo/Video opportunities</li>
+            </ul>
+          </li>
+          <li>
+            Dinner in the city center
+            <ul>
+              <li>Traditional Austrian food</li>
+              <li>Live music</li>
+            </ul>
+          </li>
+        </ol>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
