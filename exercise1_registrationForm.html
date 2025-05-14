@@ -1,0 +1,105 @@
+<!--
+Forms are great for collecting information on users, like job applications or
+registration forms.
+In this exercise, you are going to use all your knowledge about HTML forms
+and create an HTML page that can be used as a registration form for a
+Web page.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <style>
+
+    h2,table {
+        display:flex;
+        flex-direction: column; /* elements stage vertically */
+        align-items: center;  
+    }
+
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <h2 style="padding:5px">Registration Form</h2>
+    <hr>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Firstname</td>
+                <td><input type="text" name="firstname" class="form-control"></td>
+            </tr>
+            <tr><td style="height: 10px;"></td></tr>
+            <tr>
+                <td>Lastname</td>
+                <td><input type="text" name="lastname" class="form-control"></td>
+            </tr>
+            <tr><td style="height: 10px;"></td></tr>
+            <tr>
+                <td>Courses:</td>
+                <td> 
+                    <select name="course" class="form-select">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">PHP</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td style="height: 10px;"></td></tr>
+            <tr>
+            <td>Gender:</td>
+                <td class="form-check">
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </td>  
+            </tr>
+            <tr><td style="height: 10px;"></td></tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td>               
+                    <input type="checkbox" name="hobby" value="programming" checked> Programming<br>
+                    <input type="checkbox" name="hobby" value="basketball" checked> Basketball<br>
+                    <input type="checkbox" name="hobby" value="football"> Football<br>
+                    <input type="checkbox" name="hobby" value="reading"> Reading Novel</td>
+                 </td>   
+            </tr>
+            <tr><td style="height: 10px;"></td></tr>
+            <tr>
+                <td>Phone</td>
+                <td><input class="form-control" type="text" id="phone" value="+43123456789"></td>
+            </tr>
+            <tr><td style="height: 10px;"></td></tr>
+            <tr>
+                <td>Adress:</td>
+                <td><textarea class="form-control" name="adress" id="adress" cols="30" rows="10">Schützenstraße 12345 Vienna,Austria</textarea></td>
+            </tr>
+            <tr><td style="height: 10px;"></td></tr>
+            <tr>
+                <td>Email</td>
+                <td><input class="form-control" type="email" id="email" value="johndoe@example.com" style="width:200px;"></td>
+            </tr>
+            <tr><td style="height: 10px;"></td></tr>
+            <tr>
+                <td>Password:</td>
+                <td><input class="form-control" type="password" id="password" value="123456789"></td>
+            </tr>
+            <tr><td style="height: 10px;"></td></tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" class="btn btn-warning" style="width: 130px;">
+                    <input type="button" value="Reset" class="btn btn-warning" style="width: 130px; margin-left:15px">
+                </td>
+            </tr>
+        </table>    
+          
+
+    </form>
+    
+</body>
+</html>
